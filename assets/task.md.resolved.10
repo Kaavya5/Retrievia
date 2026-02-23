@@ -1,0 +1,6 @@
+# Task: Isolate Document Context Per Chat
+
+- [x] Update Streamlit [app.py](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/frontend/app.py) to clear `current_doc_id` on "New Chat" and pass it in [chat_with_docs](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/frontend/app.py#129-141)
+- [x] Add `document_id` to [ChatRequest](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/backend/models/schemas.py#21-25) schema in [schemas.py](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/backend/models/schemas.py)
+- [x] Update [query_similarity](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/backend/services/rag_service.py#51-82) in [rag_service.py](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/backend/services/rag_service.py) to filter by Document ID
+- [x] Update [complete_chat](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/backend/routes/chat.py#13-63) route in [chat.py](file:///Users/kaavyahk05/Desktop/Knowledge_Desk_App/backend/routes/chat.py) to only use Context if `document_id` provided

@@ -1,0 +1,9 @@
+# Task: App UI Overhaul (Migrate to React)
+
+- [ ] Get user approval for React migration [implementation_plan.md](file:///Users/kaavyahk05/.gemini/antigravity/brain/02b362f3-80c1-46d0-85bf-a525850813bd/implementation_plan.md)
+- [ ] Initialize Vite React app in new `frontend_v2` directory
+- [ ] Implement premium Landing Page component
+- [ ] Implement Dashboard and Chat Interface components
+- [ ] Integrate with existing FastAPI backend endpoints
+- [ ] Apply high-quality CSS styling and animations
+- [ ] Replace old Streamlit app
